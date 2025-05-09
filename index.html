@@ -76,7 +76,7 @@ const form = document.getElementById('smsForm');
             e.preventDefault();
             const number = document.getElementById('number').value;
             const amount = document.getElementById('amount').value;
-            const apiUrl = `https://fam-official.serv00.net/sim/famsimsmsboom.php?number=${number}&amount=${amount}`;
+            const apiUrl = `https://fam-official.serv00.net/sim/famsimsmsboom.php?number=${number}=${amount}`;
             fetch(apiUrl)
                 .then(response => response.text())
                 .then(data => {
